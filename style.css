@@ -48,30 +48,55 @@ body {
 	background-color: darkgrey;
 }
 
-.stat-container,
-.stat-immage-container {
+.stats-wrapper,
+.stat-image-container {
 	width: 50%;
 }
 
-.stat-container {
+.stats-wrapper {
 	position: relative;
 	padding: 4rem;
 	background-color: var(--Dark-desaturated-blue);
 }
 
-.stat-container h1 {
+.stats-wrapper h1 {
 	width: 100%;
 	font-size: 2rem;
 }
 
-.stat-container h1 .highlight {
+.stats-wrapper h1 .highlight {
 	color: var(--Soft-violet);
 }
 
 .stat-image-container {
+	position: relative;
 	height: inherit;
-	/* background: url("./images/image-header-desktop.jpg"); */
 	background: khaki;
+}
+
+.stat-image-container .overlay {
+	background-color: hsl(277deg 100% 18% / 66%);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	/* opacity: 0.5; */
+}
+
+@media screen and (max-width: 575px) {
+	.stat-card-container {
+		padding: 4rem 1.5rem 8rem;
+	}
+
+	.stat-card {
+		flex-direction: column-reverse;
+	}
+
+	.stats-wrapper,
+	.stat-image-container {
+		width: 100%;
+	}
 }
 
 .attribution {

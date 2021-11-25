@@ -23,7 +23,7 @@
 	<body>
 		<div class="stat-card-container flex flex-align-center flex-justify-center">
 			<div class="stat-card flex flex-align-center">
-				<div class="stat-container">
+				<div class="stats-wrapper">
 					<h1>
 						Get <span class="highlight"> insights </span> that help your
 						business grow.
@@ -36,23 +36,24 @@
 					<div class="stats inner-wrapper flex">
 						<div class="stats">
 							<p class="stat-count">10k+</p>
-							<p class="stat-name">companies</p>
+							<p class="stat-heading">companies</p>
 						</div>
 						<div class="stats">
 							<p class="stat-count">314</p>
-							<p class="stat-name">templates</p>
+							<p class="stat-heading">templates</p>
 						</div>
 						<div class="stats">
 							<p class="stat-count">12m+</p>
-							<p class="stat-name">queries</p>
+							<p class="stat-heading">queries</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="stat-image-container">
-					<picture>
+				<div class="stat-image-container flex">
+					<div class="overlay"></div>
+					<picture class="flex">
 						<source
-							media="(min-width: 10rem)"
+							media="(min-width: 30rem)"
 							srcset="./images/image-header-desktop.jpg"
 							class="stat-image"
 						/>
@@ -60,6 +61,7 @@
 							src="./images/image-header-mobile.jpg"
 							alt=""
 							class="stat-image"
+							style="width: 100%"
 						/>
 					</picture>
 				</div>
